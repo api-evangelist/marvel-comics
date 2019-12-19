@@ -1,0 +1,63 @@
+{
+    "name": "Marvel Comics",
+    "description": "<p>The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of comics&mdash;from what's coming up, to 70 years ago.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/marvel-comics-logo.png",
+    "tags": [
+        "api provider",
+        "comic book",
+        "comic books",
+        "getting started example",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/marvel-comics\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Marvel Comics API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/marvel-comics-logo.png",
+            "humanURL": "https:\/\/marvel.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/marvel-comics-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Developers",
+            "url": "http:\/\/developer.marvel.com\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/developer.marvel.com\/docs"
+        },
+        {
+            "type": "Getting Started",
+            "url": "http:\/\/developer.marvel.com\/documentation\/getting_started"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/developer.marvel.com\/pleasesignin"
+        },
+        {
+            "type": "Swagger - Original",
+            "url": "http:\/\/gateway.marvel.com\/docs\/public"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/developer.marvel.com\/terms"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/marvel.com"
+        }
+    ]
+}
