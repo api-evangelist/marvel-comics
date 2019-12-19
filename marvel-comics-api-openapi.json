@@ -1,0 +1,1080 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "Marvel Comics API",
+        "description": "The Marvel Comics API allows developers everywhere to access information about Marvel's vast library of comics???from what's coming up, to 70 years ago. ",
+        "termsOfService": "http:\/\/developer.marvel.com\/terms"
+    },
+    "servers": [
+        "httpgateway.marvel.com\/docs\/public"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "ComicList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EventList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CreatorList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CharacterList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SeriesList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "StoryList": {
+                "type": "object",
+                "properties": {
+                    "available": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "returned": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectionURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CharacterSummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "role": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EventSummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SeriesSummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ComicSummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Url": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "url": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CreatorSummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "role": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "StorySummary": {
+                "type": "object",
+                "properties": {
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Image": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "extension": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ComicDate": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "date": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CharacterDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EventDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ComicPrice": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "price": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EventDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Creator": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "middleName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "suffix": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "fullName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "urls": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "series": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stories": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comics": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "events": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "title": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "urls": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "start": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "end": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comics": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stories": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "series": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "characters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "creators": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "next": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ComicDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TextObject": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "language": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "text": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CreatorDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "StoryDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Character": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "urls": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comics": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stories": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "events": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "series": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CharacterDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ComicDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Series": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "title": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "urls": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "startYear": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "endYear": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "rating": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comics": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stories": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "events": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "characters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "creators": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "next": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SeriesDataWrapper": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "copyright": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionText": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "attributionHTML": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "etag": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SeriesDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "StoryDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Comic": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "digitalId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "title": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "issueNumber": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "variantDescription": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "isbn": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "upc": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "diamondCode": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ean": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "issn": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "format": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "pageCount": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "textObjects": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "urls": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "series": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "variants": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collections": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "collectedIssues": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "dates": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "prices": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "images": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "creators": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "characters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stories": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "events": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CreatorDataContainer": {
+                "type": "object",
+                "properties": {
+                    "offset": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "total": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "count": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Story": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "title": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resourceURI": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "comics": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "series": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "events": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "characters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "creators": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "originalissue": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
